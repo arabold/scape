@@ -1,7 +1,7 @@
 lean
 =====
 
-Lean Express, AngularJS and Node.js boilplate
+LEAN stands for **L**ean **E**xpress, **A**ngularJS and **N**ode.js boilplate
 
 Features
 --------
@@ -16,3 +16,8 @@ Features
 To Do
 -----
 * Integrate Grunt and nodemon
+* Setup quickstart example for AngularJS routes
+* Create a configurable command line tool to create new web sites based on this boilerplate
+  * Optional MongoDB/Mongoose support
+  * Optional Passport support
+  * etc.
