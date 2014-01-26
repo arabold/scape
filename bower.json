@@ -1,9 +1,11 @@
 {
-  "name": "lean",
+  "name": "scape",
   "version": "0.1.0",
   "dependencies": {
     "bootstrap": "3.0.x",
     "html5shiv": "latest",
+    "ink": "latest",
+    "codemirror": "latest",
     "angular": "latest",
     "angular-resource": "latest",
     "angular-route": "latest",

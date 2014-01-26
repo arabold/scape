@@ -1,18 +1,11 @@
-lean
+scape
 =====
 
-Lean Express, AngularJS and Node.js boilplate
+Responsive email editor based on ZURB's Ink boilerplate
 
-Features
---------
-* Standardized folder structure
-* All you need, but nothing you don't
-* Node.js and Express server
-* connect-mincer for server-side compiling of LESS and CoffeeScript
-* Bower for easy web package management
-* Bootstrap and FontAwesome for beautiful web design
-* AngularJS for your client-side logic
+This is yet a very rough version of what to come... 
 
-To Do
------
-* Integrate Grunt and nodemon
+_scape_ allows you to create responsive emails directly in your browser and
+shows you a preview for desktop and mobile devices in realtime, while you type.
+
+_scape_ is based on the popular responsive email boilplate Ink by ZURB (zurb.com/ink/).

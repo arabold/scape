@@ -1,12 +1,12 @@
 {
-  "name": "lean",
-  "description": "Lean Express, AngularJS and Node.js boilplate",
+  "name": "scape",
+  "description": "Responsive email editor based on ZURB's Ink boilerplate",
   "author": "Andre Rabold <andre.rabold@gmail.com> (http://www.rabold.org)",
   "version": "0.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:arabold/lean-boilerplate.git"
+    "url": "git@github.com:arabold/scape.git"
   },
   "engines": {
     "node": "0.10.x",

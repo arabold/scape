@@ -4,4 +4,4 @@
 //=require_self
 //=require_tree ./
 
-angular.module("lean", ['ngCookies', 'ngResource', 'ngRoute', 'ui.bootstrap']);
+angular.module("scape", ['ngCookies', 'ngResource', 'ngRoute', 'ui.bootstrap']);
