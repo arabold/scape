@@ -3,3 +3,44 @@
  */
 //=require_self
 //=require_tree ./
+
+// Original Bootstrap's CSS depends on empty href attributes to style cursors 
+// for several components (pagination, tabs etc.). But in AngularJS adding empty
+// href attributes to link tags will cause unwanted route changes.
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+body,html  {
+//	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+//	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+//	box-sizing: border-box; /* Opera/IE 8+ */
+//	height: 100% !important;
+//	overflow: hidden;
+}
+
+.fill {
+//	height: 100%;
+}
+
+.right, .left {
+	overflow: auto;
+}
+
+.CodeMirror {
+	border: 1px solid #eee;
+	height: auto !important;
+}
+
+.CodeMirror-scroll {
+	overflow-y: hidden;
+	overflow-x: auto;
+}
+
+.preview {
+	width: 100%;
+	border: 1px solid #F0F0F0;
+	margin: 0;
+	padding: 0;
+}
+
+.preview-desktop {
+}
