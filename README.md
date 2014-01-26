@@ -3,6 +3,8 @@ scape
 
 Responsive email editor based on ZURB's Ink boilerplate
 
+![Scape Screenshot](docs/scape-screenshot.png "Scape Screenshot")
+
 This is yet a very rough version of what to come... 
 
 _scape_ allows you to create responsive emails directly in your browser and
