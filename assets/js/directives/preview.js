@@ -4,13 +4,11 @@ angular.module('scape').directive('preview',
 	function link(scope, element, attrs) {
 		var content = "";
 		var style = "";
+		attrs.preview = attrs.preview || "desktop";
 		
 		// Create an iframe element which will contain our preview
 		var iframe = document.createElement("iframe");
 		$(element).append(iframe);
-		$(iframe).addClass("preview");
-		if (attrs.preview)
-			$(iframe).addClass("preview-"+attrs.preview);
 		
 		function reloadStyle() {
 			$http.get('/lib/ink/css/ink.css').then(function(response) {
@@ -30,6 +28,7 @@ angular.module('scape').directive('preview',
 			contentWindow.document.write(formatted);
 			contentWindow.document.close();
 			
+			// the iframe should size according to its content
 			var height = contentWindow.document.body.scrollHeight;
 			var width = contentWindow.document.body.scrollWidth;
 			$(iframe).attr("height", String(height + 16) + "px");
@@ -39,13 +38,19 @@ angular.module('scape').directive('preview',
 		});
 
 		scope.$watch(attrs.ngModel, function(value) {
-			if (value) {
-				content = value;
-				updatePreview();
-			}
+			content = value;
+			updatePreview();
+		});
+
+		scope.$watch(function() { return attrs.preview }, function(value) {
+			$(iframe).removeClass();
+			$(iframe).addClass("preview");
+			$(iframe).addClass("preview-"+attrs.preview);
 		});
 		
 		reloadStyle();
+	    $.event.add(window, "load", reloadStyle);
+	    $.event.add(window, "resize", reloadStyle);
 	}
 	
 	return {

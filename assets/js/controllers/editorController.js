@@ -5,6 +5,7 @@ angular.module('scape').controller('EditorController',
 	
 	$scope.template = '/lib/ink/templates/base/basic.html';
 	$scope.styleSheet = '/lib/ink/css/ink.css';
+	$scope.preview = "desktop";
 	$scope.editorOptions = {
 //		    styleActiveLine: true,
 //		    showTrailingSpace: true,
@@ -22,6 +23,10 @@ angular.module('scape').controller('EditorController',
 //	$scope.$watch('htmlContent', function() {
 //		// Handle changes to the HTML content
 //	});
+	
+	$scope.switchPreview = function(preview) {
+		$scope.preview = preview;
+	}
 
 	// Load the template
 	$http.get($scope.template).then(function(response) {

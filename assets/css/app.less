@@ -9,20 +9,23 @@
 // href attributes to link tags will cause unwanted route changes.
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
-body,html  {
+html, body  {
 //	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 //	-moz-box-sizing: border-box; /* Firefox, other Gecko */
 //	box-sizing: border-box; /* Opera/IE 8+ */
-//	height: 100% !important;
+	height: 100%;
 //	overflow: hidden;
 }
 
-.fill {
-//	height: 100%;
+.fluid-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.right, .left {
-	overflow: auto;
+#panel-code, #panel-preview {
+//	overflow-y: scroll;
 }
 
 .CodeMirror {
@@ -43,4 +46,11 @@ body,html  {
 }
 
 .preview-desktop {
+}
+
+.preview-iphone5,
+.preview-nexus5 {
+	border: 10px solid black;
+	height: 568px !important;
+	width: 320px !important;
 }
