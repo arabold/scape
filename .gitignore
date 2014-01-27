@@ -7,10 +7,12 @@ lib-cov
 *.pid
 *.gz
 
-pids
-logs
-results
-vendor
+pids/
+logs/
+results/
 
+.DS_Store
+.nodemonignore
 npm-debug.log
-node_modules
+node_modules/
+vendor/
