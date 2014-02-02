@@ -25,11 +25,16 @@
     <![endif]-->
   </head>
   <body>
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <h1><span class="fa fa-heart"></span> Welcome to <%= app.name %></h1>
-        <p><%= app.description %></p>
-      </div>
+    <div class="container">
+      <script>
+        // Make app data available to AngularJS
+        app = <%- JSON.stringify(app) %>;
+      </script>
+      <section class="ng-view">
+        <div class="text-center"><p class="lead" style="margin-top:50px">
+          <span class="fa fa-spinner fa-spin"></span> Loading...
+        </p></div>
+      </section>
     </div>
     
     <!--AngularJS-->
