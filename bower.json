@@ -6,6 +6,7 @@
     "html5shiv": "latest",
     "ink": "latest",
     "codemirror": "latest",
+    "jquery": "2.1.x",
     "jquery.splitter": "https://github.com/jcubic/jquery.splitter.git#master",
     "angular": "latest",
     "angular-resource": "latest",
