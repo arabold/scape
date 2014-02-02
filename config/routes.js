@@ -1,12 +1,13 @@
-config = require('./config');
+var config = require('./config'),
+	autoroute = require('express-autoroute'),
+	path = require('path');
 
 module.exports = function(app) {
 
-	// Home route
-	app.get('/', function(req, res) {
-		res.render('index', {
-			app : config.app
-		});
+	// Setup routes
+	autoroute(app, {
+		routesDir: path.join(__dirname, "../app/routes"),
+		throwErrors: true
 	});
 
 };

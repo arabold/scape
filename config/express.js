@@ -2,7 +2,7 @@
  * Module dependencies.
  */
 var express = require('express'),
-config = require('./config');
+	config = require('./config');
 
 var ConnectMincer = require('connect-mincer');
 var connectMincer = new ConnectMincer({
