@@ -1,0 +1,38 @@
+<section class="" data-ng-controller="EditorController">
+  <div class="fill-height split-vertical">
+    <div>
+      <div style="padding-left:15px;padding-right:6px">
+        <!-- FIXME ui-codemirror doesn't work within custom directives -->
+        <div class="pull-right" data-ng-show="editor == 'html'">
+          <label for="template">Template:</label>
+          <select name="template" data-ng-model="template" 
+              data-ng-options="value for value in templates"></select>
+        </div>
+        <div class="pull-right" data-ng-show="editor == 'css'">
+          <label for="style">Template:</label>
+          <select name="style" data-ng-model="style" 
+              data-ng-options="value for value in styles"></select>
+        </div>
+        <tabset>
+          <tab heading="HTML" select="setEditor('html')"></tab>
+          <tab heading="CSS" select="setEditor('css')"></tab>
+          <tab heading="Text" select="setEditor('text')"></tab>
+        </tabset>
+        <div class="fill-height">
+          <div id="html-editor" data-ui-codemirror="editorOptions" data-ng-model="content[editor]"></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div style="padding-right:15px;padding-left:6px">
+        <tabset>
+          <tab heading="Desktop" select="setPreview('desktop')"></tab>
+          <tab heading="iPhone 5" select="setPreview('iphone5')"></tab>
+        </tabset>
+        <div class="fill-height">
+          <div data-preview="{{preview}}" data-ng-model="content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
