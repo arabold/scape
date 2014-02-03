@@ -14,6 +14,10 @@ Features
 * Bootstrap and FontAwesome for beautiful web design
 * AngularJS for your client-side logic
 
+Examples
+--------
+* [scape](https://github.com/arabold/scape), the responsive email editor based on ZURB's Ink boilerplate, is based on LEAN. Both are developed independently but alongside of each other.
+
 To Do
 -----
 * Integrate Grunt and nodemon
