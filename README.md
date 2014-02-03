@@ -20,6 +20,8 @@ npm install
 npm start
 ```
 
+_scape_ is based on the [LEAN Boilerplate](https://github.com/arabold/lean-boilerplate) and developed alongside.
+
 ### Deploy to Heroku
 To deploy _scape_ to Heroku, simply create a new app and use git to push it up:
 ```
