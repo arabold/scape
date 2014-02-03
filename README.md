@@ -3,6 +3,8 @@ lean
 
 LEAN stands for **L**ean **E**xpress, **A**ngularJS and **N**ode.js boilplate
 
+[![Dependency Status](https://david-dm.org/arabold/lean-boilerplate.png)](https://david-dm.org/arabold/lean-boilerplate)
+
 Features
 --------
 * Standardized folder structure
