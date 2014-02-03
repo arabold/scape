@@ -32,7 +32,7 @@
         <div class="navbar-brand"><span class="fa fa-envelope"></span> <%= app.name %> - <%= app.description %></div>
       </div>
     </div>
-    <div class="container">
+    <div class="fluid-container">
       <script>
         // Make app data available to AngularJS
         app = <%- JSON.stringify(app) %>;
@@ -70,33 +70,5 @@
     <script type="text/javascript" src="/js/app.js"></script>
     <!--Livereload script rendered -->
     <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
-    
-    <script>
-    /* FIXME: This could use some cleanup */
-
-    function resizeFrame() {
-      var bodyHeight = $("body").innerHeight();
-      $(".fill-height").each(function(index) {
-        var height = bodyHeight - $(this).offset().top - 15;
-        $(this).css("height", String(height) + "px");
-        $(this).css("overflow-y", "auto");
-      });
-    }
-    
-    $.event.add(window, "load", resizeFrame);
-    $.event.add(window, "resize", resizeFrame);
-    $(document).ready(function () {
-      $('.split-vertical').split({
-        orientation: 'vertical',
-        limit: 350,
-        position: '50%',
-        onDrag: function(e) {
-        	resizeFrame();
-        }
-      });
-    });
-
-    </script>
-    
   </body>
 </html>
