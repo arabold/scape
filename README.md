@@ -3,6 +3,10 @@
 
 Responsive email editor based on ZURB's Ink boilerplate
 
+[![Dependency Status](https://david-dm.org/arabold/scape.png)](https://david-dm.org/arabold/scape)
+
+### Screenshot
+
 ![Scape Screenshot](docs/scape-screenshot.png "Scape Screenshot")
 
 ### Overview
