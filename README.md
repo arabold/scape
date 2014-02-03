@@ -8,6 +8,7 @@ Features
 * Standardized folder structure
 * All you need, but nothing you don't
 * Node.js and Express server
+* Automatic route setup following convention over configuration
 * connect-mincer for server-side compiling of LESS and CoffeeScript
 * Bower for easy web package management
 * Bootstrap and FontAwesome for beautiful web design
@@ -16,8 +17,8 @@ Features
 To Do
 -----
 * Integrate Grunt and nodemon
-* Setup quickstart example for AngularJS routes
-* Create a configurable command line tool to create new web sites based on this boilerplate
+* ~~Setup quickstart example for AngularJS routes~~ DONE
+* Create a configurable command line tool (Yeoman.io) to create new web sites based on this boilerplate
   * Optional MongoDB/Mongoose support
   * Optional Passport support
   * etc.
