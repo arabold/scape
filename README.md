@@ -4,6 +4,7 @@
 Responsive email editor based on ZURB's Ink boilerplate
 
 [![Dependency Status](https://david-dm.org/arabold/scape.png)](https://david-dm.org/arabold/scape)
+[![Code Climate](https://codeclimate.com/github/arabold/scape.png)](https://codeclimate.com/github/arabold/scape)
 
 ### Screenshot
 
